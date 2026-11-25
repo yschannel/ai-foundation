@@ -20,10 +20,10 @@ NumPy 基础为零、按逐句精读推进，本周实际用时约为计划的�
 
 ## 环境（Windows PowerShell）
 
-环境在 `D:\AAA000AI\阶段0\week1\.venv`，直接调用它的 Python 即可。写完第三次的小函数和测试后，在同一目录运行最后一行。
+环境在 `D:\AAA000AI\stage0\week1\.venv`，直接调用它的 Python 即可。写完第三次的小函数和测试后，在同一目录运行最后一行。
 
 ```powershell
-Set-Location -LiteralPath 'D:\AAA000AI\阶段0\week1'
+Set-Location -LiteralPath 'D:\AAA000AI\stage0\week1'
 .\.venv\Scripts\python.exe --version
 .\.venv\Scripts\python.exe -c "import numpy; print(numpy.__version__)"
 .\.venv\Scripts\python.exe -m pytest --version
@@ -75,7 +75,7 @@ uv pip install --python .\.venv\Scripts\python.exe --cache-dir .uv-cache numpy p
 ```powershell
 Set-Location -LiteralPath 'D:\AAA000AI'
 git status                 # 看改了什么
-git add 阶段0/week1         # 换成这次的目录
+git add stage0/week1         # 换成这次的目录
 git status                 # 确认只有该交的文件（不能有 .venv 之类）
 git commit -m "weekN: <what you did> (YYYY-MM-DD)"
 git push
