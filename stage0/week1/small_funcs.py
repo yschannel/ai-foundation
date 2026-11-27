@@ -96,4 +96,6 @@ def standardize_rows(x):
     array([[-1.2247,  0.    ,  1.2247]])
     """
     # TODO
+    y = x - x.mean(axis=1, keepdims=True)
+    return y / y.std(axis=1, keepdims=True)
     raise NotImplementedError
