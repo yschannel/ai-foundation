@@ -19,9 +19,7 @@ def row_mean(x):
     >>> row_mean(np.array([[1, 2, 3], [4, 5, 6]]))
     array([2., 5.])
     """
-    # TODO
     return x.mean(axis=1)
-    raise NotImplementedError
 
 
 def col_max(x):
@@ -33,9 +31,7 @@ def col_max(x):
     >>> col_max(np.array([[1, 9, 3], [4, 5, 6]]))
     array([4, 9, 6])
     """
-    # TODO
     return x.max(axis = 0)
-    raise NotImplementedError
 
 
 def to_column(v):
@@ -47,9 +43,7 @@ def to_column(v):
     >>> to_column(np.array([1, 2, 3])).shape
     (3, 1)
     """
-    # TODO
     return v[:,None]
-    raise NotImplementedError
 
 
 def count_even(x):
@@ -61,9 +55,7 @@ def count_even(x):
     >>> count_even(np.array([[1, 2], [3, 4], [0, -6]]))
     4
     """
-    # TODO
     return int((x % 2 == 0).sum())
-    raise NotImplementedError
 
 
 def above_mean(x):
@@ -76,9 +68,7 @@ def above_mean(x):
     >>> above_mean(np.array([[1, 5], [3, 7]]))   # mean = 4
     array([5, 7])
     """
-    # TODO
     return x[x > x.mean()]
-    raise NotImplementedError
 
 
 def standardize_rows(x):
@@ -95,7 +85,5 @@ def standardize_rows(x):
     >>> standardize_rows(np.array([[1., 2., 3.]])).round(4)
     array([[-1.2247,  0.    ,  1.2247]])
     """
-    # TODO
     y = x - x.mean(axis=1, keepdims=True)
     return y / y.std(axis=1, keepdims=True)
-    raise NotImplementedError
